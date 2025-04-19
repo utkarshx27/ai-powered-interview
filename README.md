@@ -1,10 +1,10 @@
-# 🤖 AI-Powered Interviewer Bot
+# AI-Powered Interviewer Bot
 
 An intelligent, resume-aware interviewer built using **Streamlit**, **LangChain**, and **OpenAI**, capable of conducting technical interviews based on a candidate’s resume and job description.
 
 ---
 
-## 🚀 Features
+## Features
 
 - 📄 **Smart Resume Parsing**
   - Upload a resume (PDF), and the system extracts key details like name, email, experience, skills, projects, and more using LLM-based parsing.
@@ -60,6 +60,43 @@ An intelligent, resume-aware interviewer built using **Streamlit**, **LangChain*
    - All details + feedback are saved in `candidate_details.csv`.
 
 ---
-
+```
 ## 📂 Project Structure
+├── interview_app.py.py      # Main Streamlit app
+├── requirements.txt         # Python dependencies
+├── candidate_details.csv    # (auto-generated) Logs interview data
+└── README.md                # Readme
+```
 
+---
+
+## 🚀 Run Locally
+
+Follow these steps to run the AI Interviewer Bot on your machine:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/ai-interviewer-bot.git
+cd ai-interviewer-bot
+```
+
+### 2. Set Up a Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Set Your OpenAI API Key
+```bash
+set OPENAI_API_KEY=your-openai-api-key
+```
+
+### 5. Run the Streamlit App
+```
+streamlit run interview_app.py
+```

@@ -67,7 +67,7 @@ An intelligent, resume-aware interviewer built using **Streamlit**, **LangChain*
 ├── candidate_details.csv    # (auto-generated) Logs interview data
 └── README.md                # Readme
 ```
-
+ 
 ---
 
 ## 🚀 Run Locally
